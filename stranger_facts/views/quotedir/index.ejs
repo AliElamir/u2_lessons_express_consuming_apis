@@ -3,27 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>Welcome to Stranger quotes!</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-    }
-
-    .fact-container {
-      margin-top: 20px;
-    }
-  </style>
 </head>
 <body>
   <!-- Display quotes -->
   <div class="fact-container">
     <h2>some strange quotes:</h2>
     <% strangerFacts.forEach(quoteobject => { %>
-      <p><%= quoteobject.author %></p>
-      <p><%= quoteobject.quote %></p>
+      <p><span class="authors"><%= quoteobject.author %>:</span> <%= quoteobject.quote %></p>
       -----------------------------------
     <% }); %>
+    </br>
+    <a href="/">Go back</a>
   </div>
 </body>
 </html>

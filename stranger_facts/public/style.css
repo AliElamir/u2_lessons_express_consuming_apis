@@ -1,0 +1,33 @@
+h1 {
+  color: red;
+  font-size: 38px;
+  margin: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+  color: red;
+  font-size: 28px;
+  margin: 50px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.fact-container {
+  margin-top: 20px;
+}
+
+p {
+  font-style: italic;
+}
+
+.authors {
+  font-size: 18px;
+  font-weight: bold;
+  /* text-decoration: underline; */
+  color: hotpink;
+  font-style: normal;
+}

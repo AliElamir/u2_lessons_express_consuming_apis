@@ -4,6 +4,7 @@ const quotesRouter = require('./routes/quotes')
 const app = express()
 const PORT = 3000
 app.set('view engine', 'ejs')
+app.use(express.static('public'))
 
 const axios = require('axios')
 
